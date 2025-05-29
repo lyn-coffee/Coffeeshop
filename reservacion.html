@@ -37,6 +37,7 @@
     </nav>
       <!--final de navbar-->
 
+    
     <!-- Formulario -->
       <!-- Formulario de Reservación -->
 <div class="container my-5 pt-5">
@@ -48,7 +49,7 @@
         <div class="col-12">
           <!-- Encabezado -->
           <div class=" text-white p-3 rounded-top text-center" style="background-color: #a09071;">
-            <h3 class="mb-0">Contacto</h3>
+            <h3 class="mb-0">Reservación</h3>
           </div>
 
           <!-- Cuerpo del Formulario -->
@@ -70,13 +71,18 @@
               </div>
 
               <div class="mb-3">
-                 <label for="mensaje" class="form-label">Mensaje:</label><br>
-                 <textarea id="mensaje" class="form-control" name="mensaje" rows="4" cols="60" required></textarea><br>
+                <label for="personas" class="form-label">Número de personas</label>
+                <input type="number" class="form-control" id="personas" name="personas" min="1" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="fechaHora" class="form-label">Fecha y hora</label>
+                <input type="datetime-local" class="form-control" id="fechaHora" name="fechaHora" required>
               </div>
 
               <!-- <button type="submit" class="btn btn-primary w-100">Enviar</button> -->
             <div class=" row justify-content-center">
-              <button type="submit w-100">Enviar</button>
+              <button type="submit w-100">Reservar</button>
             </div>
             </form>
           </div>
@@ -87,7 +93,7 @@
 <!-- Imagen -->
     <div class="col-12 col-md-6 text-center">
       <div class="display-4 text-success mb-3">Vía WhatsApp</div>
-      <img class="img-fluid" src="images/QR.png" alt="Reservación" style="max-width: 300px;">
+      <img class="img-fluid" src="images/QR2.png" alt="Reservación" style="max-width: 300px;">
     </div>
 
   </div>
@@ -95,7 +101,13 @@
 
         <!-- Final imagen enlace -->
 
-    <!-- Inicio de footer -->
+
+
+
+
+
+
+     <!-- Inicio de footer -->
     <div class="container"> 
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"> 
           <div class="col-md-4 d-flex align-items-center">
